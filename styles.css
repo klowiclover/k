@@ -1,3 +1,27 @@
+/* Set the GIF as the background */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/background.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Section styling */
+section {
+    width: 70%;
+    max-width: 600px;
+    background-color: #054a85;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
 @keyframes rainbow {
     0% { color: red; }
     16.67% { color: yellow; }
