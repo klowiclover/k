@@ -29,6 +29,7 @@ body {
     50% { color: blue; }
     66.67% { color: green; }
     83.33% { color: yellow; }
+    99% { color: red; }
     100% { color: red; }
 }
 
