@@ -29,7 +29,14 @@
     font-family: Arial, sans-serif;
     background-color: black;
 }
-      
+          .top-left-image {
+      position: absolute; /* Position the image absolutely */
+      top: 0;
+      left: 0;
+      margin: 10px; /* Optional: Add some margin from the edges */
+      width: 100px; /* Adjust the size as needed */
+      height: auto;
+    }
       .image-container {
         display: flex;
         gap: 10px; /* Space between images */
@@ -38,9 +45,10 @@
       
     </style>
         <head>
-        <div class="image-container">
+        <img src="images/back.png" alt="Top Left" class="top-left-image">
+
         <h2 style="margin-top: 5; color: white;">Select</h2>
-          
+        <div class="image-container">
         <a href="https://klowiclover.github.io/k/music/ost">
         <img src="images/ost.png" alt="ost" style="width: 30%" height: 30%" />
 
@@ -51,9 +59,11 @@
         <img src="images/extra.png" alt="extra" style="width: 30%" height: 30%" />
         </a>
         </div>
+        <div class="image-container">
         <h1 style="margin-top: 5; color: white;">OSTs</h1>
         <h1 style="margin-top: 5; color: white;">PERSONAL</h1>
         <h1 style="margin-top: 5; color: white;">EXTRA</h1>
+        </div>  
 <div>
         <a href="https://klowiclover.github.io/k/music/other">
         <h2 style="margin-top: 15; color: Violet;">Other Projects</h2>
