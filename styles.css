@@ -1,19 +1,11 @@
 @keyframes rainbow {
     0% { color: red; }
-    7.14% { color: orange; }
-    14.28% { color: yellow; }
-    21.43% { color: green; }
-    28.57% { color: blue; }
-    35.71% { color: indigo; }
-    42.85% { color: violet; }
-    50% { color: violet; }
-    57.29% { color: indigo; }
-    64.57% { color: blue; }
-    71.86% { color: green; }
-    78.14% { color: yellow; }
-    85.43% { color: orange; }
-    92.71% { color: red; }
-    100% { color: red; } 
+    16.67% { color: orange; }
+    33.33% { color: yellow; }
+    50% { color: green; }
+    66.67% { color: purple; }
+    83.33% { color: green; }
+    100% { color: orange; }
 }
 
 .rainbow-text {
