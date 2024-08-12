@@ -1,15 +1,23 @@
 @keyframes rainbow {
     0% { color: red; }
-    16.67% { color: orange; }
-    33.33% { color: yellow; }
-    50% { color: green; }
-    66.67% { color: blue; }
-    83.33% { color: indigo; }
+    14.29% { color: orange; }
+    28.57% { color: yellow; }
+    42.86% { color: green; }
+    57.14% { color: blue; }
+    71.43% { color: indigo; }
+    85.71% { color: violet; }
     100% { color: violet; }
+    114.29% { color: indigo; }
+    128.57% { color: blue; }
+    142.86% { color: green; }
+    157.14% { color: yellow; }
+    171.43% { color: orange; }
+    185.71% { color: red; }
+    200% { color: red; } 
 }
 
 .rainbow-text {
     font-size: 36px;
     font-weight: bold;
-    animation: rainbow 6s linear infinite;
+    animation: rainbow 10s linear infinite;
 }
