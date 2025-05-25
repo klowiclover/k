@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.artist-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+section#hero {
+    background: url('images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.album-cover {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+section#albums {
+    padding: 40px 20px;
+}
+
+.album-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.album {
+    text-align: center;
+    max-width: 200px;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
