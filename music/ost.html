@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bandcamp Artist Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="artist-info">
-                <img src="images/artist.jpg" alt="Artist" class="artist-img">
-                <h1>Artist Name</h1>
-                <nav>
-                    <a href="#albums">Albums</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
+  <head>
+    <title>I AM Official Sountracks!</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="color-scheme" content="light only" />
+        <meta name="Keywords" content="Klowi, Music">
+        <meta name="Description" content="MUSIC">
+        <meta name="title" property="og:title" content="I AM OST">
+          <meta property="og:site_name" content="klowi" />
+          <meta property="og:description" content="MUSIC" />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://static.wikia.nocookie.net/villainsfanon/images/1/19/BUP.jpg/revision/latest?cb=20190730112116" />
+            <meta property="og:image:type" content="image/jpeg" />
+            <meta property="og:image:width" content="1280" />
+            <meta property="og:image:height" content="800" />
+          <meta property="og:url" content="https://klowiclover.github.io/k/" />
+        <link rel="icon" href="../images/icon.png">
+        <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+        .album-row {
+      row-gap: 5px;
+      width: 30%;
+      display: table-row;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 2px;
+      }
+</style>
+    <head>
+        <h1 style="margin-top: 5; color: white;"">ALBUMS</h1>
+
+       <div class="album-row">
+        <a href="https://klowiclover.github.io/k/music/ost">
+        <img src="../images/mus/ost.png" alt="ost" style="width: 30%"  />
+
+        <a href="https://klowiclover.github.io/k/music/personal">
+        <img src="../images/mus/personal.png" alt="personal" style="width: 30%"  />
+            
+        <a href="https://klowiclover.github.io/k/music/extra">
+        <img src="../images/mus/extra.png" alt="extra" style="width: 30%" />
+        </a>
         </div>
-    </header>
-    
-    <section id="hero">
-        <div class="hero-content">
-            <img src="images/album-cover.jpg" alt="Album Cover" class="album-cover">
-            <h2>Latest Album Title</h2>
-            <p>Description of the latest album or a promotional message.</p>
-            <a href="#" class="btn">Play Album</a>
+
+        <h1 style="margin-top: 5; color: white;"">SINGLES</h1>
+
+               <div class="album-row">
+        <a href="https://klowiclover.github.io/k/music/ost">
+        <img src="../images/mus/ost.png" alt="ost" style="width: 30%"  />
+
+        <a href="https://klowiclover.github.io/k/music/personal">
+        <img src="../images/mus/personal.png" alt="personal" style="width: 30%"  />
+            
+        <a href="https://klowiclover.github.io/k/music/extra">
+        <img src="../images/mus/extra.png" alt="extra" style="width: 30%" />
+        </a>
         </div>
-    </section>
-    
-    <section id="albums" class="container">
-        <h2>Albums</h2>
-        <div class="album-list">
-            <div class="album">
-                <img src="images/album1.jpg" alt="Album 1">
-                <h3>Album Title 1</h3>
-                <p>Album description or release info.</p>
-            </div>
-            <div class="album">
-                <img src="images/album2.jpg" alt="Album 2">
-                <h3>Album Title 2</h3>
-                <p>Album description or release info.</p>
-            </div>
-            <!-- Add more albums as needed -->
-        </div>
-    </section>
-    
-    <footer id="contact">
-        <div class="container">
-            <p>Contact: <a href="mailto:artist@example.com">artist@example.com</a></p>
-            <p>Follow on social media:</p>
-            <a href="https://twitter.com/artist" target="_blank">Twitter</a>
-            <a href="https://facebook.com/artist" target="_blank">Facebook</a>
-            <!-- Add more social media links if needed -->
-        </div>
-    </footer>
-</body>
-</html>
+    </head>
