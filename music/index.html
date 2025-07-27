@@ -38,6 +38,12 @@
       height: auto;
     }
       .image-container {
+        align-self: center
+        display: flex;
+        gap: 3%; /* Space between images */
+        margin-bottom: 2px; /* Space below the image container */
+      }
+            .image-container2 {
         display: flex;
         gap: 5%; /* Space between images */
         margin-bottom: 2px; /* Space below the image container */
@@ -47,6 +53,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+    bottom: 8px;
     left: 16px;
     gap: 2%; /* Space between images */
     margin-bottom: 2px; /* Space below the image container */
@@ -60,7 +67,7 @@
 
         <h2 style="margin-top: 5; color: white;">Select a Category</h2>
 
-        <div class="image-verticle">
+        <div class="image-container2">
         <a href="https://klowiclover.github.io/k/music/ost">
         <img src="../images/mus/ost.png" alt="ost" style="width: 30%"  />
 
