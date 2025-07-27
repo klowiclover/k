@@ -94,3 +94,9 @@ footer a {
     text-decoration: none;
     margin: 0 10px;
 }
+
+      .image-verticle {
+        display: flex;
+        gap: 2%; /* Space between images */
+        margin-bottom: 2px; /* Space below the image container */
+      }
