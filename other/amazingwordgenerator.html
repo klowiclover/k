@@ -29,8 +29,7 @@
     var out = document.getElementById("output");
     
   
-    btn.addEventListener("click", getWordM1);
-    btn.addEventListener("click", getWordM2);    
+    btn.addEventListener("click", getWordM1);   
    
     function getWordM1(){
      
@@ -58,18 +57,7 @@
         'Skaer',
       ];
 
-      
-
-      
-      var wordNum = Math.floor(Math.random() * theWord.length);
-      
-     
-      output.textContent = theWord[wordNum];
-    }
-        function getWordM2(){
-     
-      
-      var theWord= [
+            var middleword= [
         'erian',
         'own',
         'nyo',
@@ -96,9 +84,10 @@
 
       
       var wordNum = Math.floor(Math.random() * theWord.length);
+      var wordNum2 = Math.floor(Math.random() * theWord.length);
       
      
-      output.textContent = theWord[wordNum];
+      output.textContent = theWord[wordNum], middleword[wordNum2];
     }
 </script>
 </body>
