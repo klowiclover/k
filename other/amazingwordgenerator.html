@@ -29,14 +29,19 @@
   
 
   <div id="output"></div>
+  <div id="output"></div>
+  <div id="output"></div> 
+  <div id="output"></div>
 
   <script>
    
     var btn = document.getElementById("btnM");
+    var btn2 = document.getElementById("btnC");
     var out = document.getElementById("output");
     
   
     btn.addEventListener("click", getWordM);   
+    btn2.addEventListener("click", getWordC); 
    
     function getWordM(){
      
@@ -62,6 +67,13 @@
         'Hel',
         'Ska',
         'Skaer',
+        'Go',
+        'Spar',
+        'Khor',
+        'Di-',
+        'Id-',
+        'Kyro-',
+        'Ky',
       ];
 
             var middleword= [
@@ -85,6 +97,16 @@
         'eiji',
         'ha',
         'heur',
+        'disper',
+        'parax',
+        'paral',
+        'lent',
+        'ite',
+        'otol',
+        'joni',
+        'jein',
+        '',
+        '',
         '',
         '',
         '',
@@ -112,6 +134,11 @@
         'eiji',
         'ixxi',
         'pars',
+        'dow',
+        'azz',
+        'onir',
+        'id',
+        '',
         '',
         '',
         '',
@@ -122,13 +149,133 @@
       
 
       
-      var wordNum = Math.floor(Math.random() * theWord.length);
-      var wordNum2 = Math.floor(Math.random() * middleword.length);
+    var wordNum = Math.floor(Math.random() * theWord.length);
+    var wordNum2 = Math.floor(Math.random() * middleword.length);
     var wordNum3 = Math.floor(Math.random() * endword.length);
       
      
       output.textContent = theWord[wordNum] + middleword[wordNum2] + endword[wordNum3];
     }
+
+
+
+
+    function getWordC(){
+     
+      
+      var theWord= [
+        'Rennai',
+        'Dow',
+        'Rast',
+        'Nel',
+        'The',
+        'Qu',
+        'Ray',
+        'Bjo',
+        'Lumon',
+        'Nyo',
+        'Rob',
+        'To',
+        'Tyc',
+        'Tye',
+        'Hel',
+        'Fenni',
+        'Fen',
+        'Aid',
+        'Hay',
+        'Dan',
+        'Mel',
+        'Ody',
+        'Au',
+        'Yon',
+        'Koh',
+        'Kyro',
+        'Ky',
+      ];
+
+            var middleword= [
+        'rian',
+        'ray',
+        'nyo',
+        'lox',
+        'hel',
+        'ricus',
+        'ska',
+        'ize',
+        'ate',
+        'myro',
+        'hiro',
+        'goron',
+        'toroc',
+        'loc',
+        'lux',
+        'lox',
+        'mox',
+        'lert',
+        '-dawn',
+        '-don',
+        'don',
+        'arx',
+        'am',
+        'dier',
+        'eer',
+        'moi',
+        'joni',
+        'jein',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ];
+            var endword= [
+        'son',
+        'ent',
+        'aire',
+        'air',
+        'ic',
+        'x',
+        'gen',
+        'ette',
+        'ox',
+        'hall',
+        'ette',
+        'xive',
+        'equa',
+        'qio',
+        'shang',
+        'chang',
+        'hi',
+        'eiji',
+        'ixxi',
+        'zyy',
+        'dow',
+        'azz',
+        'onir',
+        'id',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ];
+
+      
+
+      
+    var wordNum = Math.floor(Math.random() * theWord.length);
+    var wordNum2 = Math.floor(Math.random() * middleword.length);
+    var wordNum3 = Math.floor(Math.random() * endword.length);
+      
+     
+      output.textContent = theWord[wordNum] + middleword[wordNum2] + endword[wordNum3];
+    }
+
+
+
 </script>
 </body>
 </html>
