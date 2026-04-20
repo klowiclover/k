@@ -143,31 +143,15 @@
         '',
       ];
 
-        var connection= [
-        ' ',
-        ' ',
-        ' ',
-        ' ',
-        '-',
-        '-',
-        '-',
-        ', ',
-        '',
-      ];
-
       
 
       
     var wordNum = Math.floor(Math.random() * theWord.length);
     var wordNum2 = Math.floor(Math.random() * middleword.length);
     var wordNum3 = Math.floor(Math.random() * endword.length);
-    var wordNum4 = Math.floor(Math.random() * theWord.length);
-    var wordNum5 = Math.floor(Math.random() * middleword.length);
-    var wordNum6 = Math.floor(Math.random() * endword.length);
-    var wordNumC = Math.floor(Math.random() * connection.length);
       
      
-      output.textContent = theWord[wordNum] + middleword[wordNum2] + endword[wordNum3] + connection[wordNumC] + theWord[wordNum4] + middleword[wordNum5] + endword[wordNum6] ;
+      output.textContent = theWord[wordNum] + middleword[wordNum2] + endword[wordNum3] ;
     }
 
 
@@ -276,15 +260,30 @@
         '',
       ];
 
-      
+        var connec= [
+        ' ',
+        ' ',
+        ' ',
+        ' ',
+        ' ',
+        '-',
+        '-',
+        '-',
+        ' the ',
+        '',
+      ];
 
       
     var wordNum = Math.floor(Math.random() * theWord.length);
     var wordNum2 = Math.floor(Math.random() * middleword.length);
     var wordNum3 = Math.floor(Math.random() * endword.length);
+    var wordNum4 = Math.floor(Math.random() * theWord.length);
+    var wordNum5 = Math.floor(Math.random() * middleword.length);
+    var wordNum6 = Math.floor(Math.random() * endword.length);
+    var wordNumC = Math.floor(Math.random() * connec.length);
       
      
-      output.textContent = theWord[wordNum] + middleword[wordNum2] + endword[wordNum3];
+      output.textContent = theWord[wordNum] + middleword[wordNum2] + endword[wordNum3] + connec[wordNumC] + theWord[wordNum4] + middleword[wordNum5] + endword[wordNum6] ;
     }
 
 
