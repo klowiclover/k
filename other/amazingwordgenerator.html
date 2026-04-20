@@ -29,9 +29,9 @@
     var out = document.getElementById("output");
     
   
-    btn.addEventListener("click", getWord);
+    btn.addEventListener("click", getWord1, getWord2);
    
-    function getWord(){
+    function getWord1(){
      
       
       var theWord= [
@@ -56,6 +56,42 @@
         'Ska',
         'Skaer',
       ];
+
+      
+
+      
+      var wordNum = Math.floor(Math.random() * theWord.length);
+      
+     
+      output.textContent = theWord[wordNum];
+    }
+        function getWord2(){
+     
+      
+      var theWord= [
+        'erian',
+        'own',
+        'nyo',
+        'ro',
+        'ard',
+        'tyc',
+        'hel',
+        'bio',
+        'ri',
+        'ska',
+        'mix',
+        'aid',
+        'equa',
+        'mil',
+        'din',
+        'kyt',
+        'eij',
+        'eiji',
+        'ha',
+        'heur',
+      ];
+
+      
 
       
       var wordNum = Math.floor(Math.random() * theWord.length);
