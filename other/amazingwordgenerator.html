@@ -15,7 +15,7 @@
 
   <h2>amazing word generator</h2>
   <div>
-    <button>generate</button>
+    <button>generate madeup words</button>
   </div>
   <div>
    
@@ -29,9 +29,10 @@
     var out = document.getElementById("output");
     
   
-    btn.addEventListener("click", getWord1, getWord2);
+    btn.addEventListener("click", getWordM1);
+    btn.addEventListener("click", getWordM2);    
    
-    function getWord1(){
+    function getWordM1(){
      
       
       var theWord= [
@@ -65,7 +66,7 @@
      
       output.textContent = theWord[wordNum];
     }
-        function getWord2(){
+        function getWordM2(){
      
       
       var theWord= [
