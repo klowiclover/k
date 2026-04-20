@@ -34,11 +34,13 @@
    
     var btn = document.getElementById("btnM");
     var btn2 = document.getElementById("btnC");
+    var btn3 = document.getElementById("btnMC");
     var out = document.getElementById("output");
     
   
     btn.addEventListener("click", getWordM);   
     btn2.addEventListener("click", getWordC); 
+    btn3.addEventListener("click", getWordMC); 
    
     function getWordM(){
      
@@ -266,6 +268,9 @@
         ' ',
         ' ',
         ' ',
+        ' ',
+        ' ',
+        '-',
         '-',
         '-',
         '-',
@@ -284,6 +289,256 @@
       
      
       output.textContent = theWord[wordNum] + middleword[wordNum2] + endword[wordNum3] + connec[wordNumC] + theWord[wordNum4] + middleword[wordNum5] + endword[wordNum6] ;
+    }
+
+        function getWordMC(){
+     
+      
+      var theWord= [
+        'Rast',
+        'Dow',
+        'The',
+        'Son',
+        'Qu',
+        'Ray',
+        'Nyo',
+        'Ba',
+        'Lumon',
+        'Tye',
+        'Hel',
+        'Ska',
+        'Skaer',
+        'Fen',
+        'G',
+        'Fenni',
+        'Equa',
+        'Myrt',
+        'Hay',
+        'Dan',
+        'Mel',
+        'Ody',
+        'Au',
+        'Yon',
+        'Koh',
+        'Kyro',
+        'Ky',
+      ];
+
+            var middleword= [
+        'farian',
+        'thiesta',
+        'thiest',
+        'ray',
+        'nyo',
+        'tye',
+        'oro',
+        'h',
+        'ska',
+        'ize',
+        'pow',
+        'gro',
+        'roci',
+        'loc',
+        'lux',
+        'lox',
+        'mox',
+        'lert',
+        '-dawn',
+        '-don',
+        'don',
+        'arx',
+        'am',
+        'dier',
+        'eer',
+        'moi',
+        'joni',
+        'jein',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ];
+            var endword= [
+        'son',
+        'sun',
+        'nel',
+        'fall',
+        'fell',
+        'ent',
+        'own',
+        'urn',
+        'ray',
+        'nyo',
+        'ette',
+        'ttle',
+        'on',
+        'qio',
+        'shang',
+        'chang',
+        'o',
+        'eiji',
+        'ixxi',
+        'zyy',
+        'x',
+        'all',
+        'ricus',
+        'ize',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ];
+
+        var connec= [
+        ' ',
+        ' ',
+        ' ',
+        ' ',
+        ' ',
+        ' ',
+        ' ',
+        ' ',
+        '-',
+        '-',
+        '-',
+        '',
+        ' and ',
+        ': ',
+        '; ',
+        ', ',
+      ];
+
+        var before= [
+        'Zero',
+        'The Legend Of',
+        'Punch',
+        'Catastrophe',
+        'Savior',
+        'Solo',
+        'Untold',
+        'Math',
+        'Sketch',
+        'Curse',
+        'Blessing',
+        'Crunch Time',
+        '0',
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        '100',
+        '1000',
+        '10000',
+        '100000',
+        '1000000',
+        '10000000',
+        '#',
+        '!',
+        '$',
+        '?',
+        '@',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ];
+        var after= [
+        'Zero',
+        'The Legend Of',
+        'Punch',
+        'Catastrophe',
+        'Savior',
+        'Solo',
+        'Untold',
+        'Math',
+        'Sketch',
+        'Curse',
+        'Blessing',
+        'Crunch Time',
+        '0',
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        '100',
+        '1000',
+        '10000',
+        '100000',
+        '1000000',
+        '10000000',
+        '#',
+        '!',
+        '$',
+        '?',
+        '@',
+                '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ];
+
+      
+    var wordNum = Math.floor(Math.random() * theWord.length);
+    var wordNum2 = Math.floor(Math.random() * middleword.length);
+    var wordNum3 = Math.floor(Math.random() * endword.length);
+    var wordNum4 = Math.floor(Math.random() * theWord.length);
+    var wordNum5 = Math.floor(Math.random() * middleword.length);
+    var wordNum6 = Math.floor(Math.random() * endword.length);
+    var wordNumC = Math.floor(Math.random() * connec.length);
+    var wordNumB = Math.floor(Math.random() * connec.length);
+    var wordNumA = Math.floor(Math.random() * connec.length);
+      
+     
+      output.textContent =   before[wordNumB] + connec[wordNumC] + theWord[wordNum] + middleword[wordNum2] + endword[wordNum3] + connec[wordNumC] + theWord[wordNum4] + middleword[wordNum5] + endword[wordNum6] + connec[wordNumC] + before[wordNumA] ;
     }
 
 
