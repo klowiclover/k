@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title>amazing word generator</title>
+  <style>
+    
+   
+    
+    #output {
+    
+      font-family:fantisy;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>amazing word generator</h2>
+  <div>
+    <button>generate</button>
+  </div>
+  <div>
+   
+  
+
+  <div id="output"></div>
+
+  <script>
+   
+    var btn = document.querySelector("button");
+    var out = document.getElementById("output");
+    
+  
+    btn.addEventListener("click", getWord);
+   
+    function getWord(){
+     
+      
+      var theWord= [
+        'Renni',
+        'Ful',
+        'Nel',
+        'Rot',
+        'The',
+        'St',
+        'Qu',
+        'Bio',
+        'Lumon',
+        'Nyo',
+        'Ro',
+        'Tyc',
+        'Hel',
+        'Olod',
+        'Aid',
+        'Fenni',
+        'Fenniel',
+        'Hel',
+        'Ska',
+        'Skaer',
+      ];
+
+      
+      var wordNum = Math.floor(Math.random() * theWord.length);
+      
+     
+      output.textContent = theWord[wordNum];
+    }
+</script>
+</body>
+</html>
