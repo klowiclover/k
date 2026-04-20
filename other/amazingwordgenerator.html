@@ -14,7 +14,7 @@
 <body>
 
   <h2>amazing word generator</h2>
-  <div>
+  <div id="btnM">
     <button>generate madeup words</button>
   </div>
   <div>
@@ -25,13 +25,13 @@
 
   <script>
    
-    var btn = document.querySelector("button");
+    var btn = document.getElementById("btnM");
     var out = document.getElementById("output");
     
   
-    btn.addEventListener("click", getWordM1);   
+    btn.addEventListener("click", getWordM);   
    
-    function getWordM1(){
+    function getWordM(){
      
       
       var theWord= [
@@ -87,7 +87,7 @@
       var wordNum2 = Math.floor(Math.random() * theWord.length);
       
      
-      output.textContent = theWord[wordNum], middleword[wordNum2];
+      output.textContent = theWord[wordNum] + middleword[wordNum2];
     }
 </script>
 </body>
