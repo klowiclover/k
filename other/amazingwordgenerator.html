@@ -17,6 +17,13 @@
   <div id="btnM">
     <button>generate madeup words</button>
   </div>
+    <div id="btnC">
+    <button>generate character names</button>
+  </div>
+    </div>
+    <div id="btnMC">
+    <button>generate Multipurpose Combinations</button>
+  </div>
   <div>
    
   
@@ -78,6 +85,38 @@
         'eiji',
         'ha',
         'heur',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ];
+            var endword= [
+        'son',
+        'fall',
+        'fell',
+        'own',
+        'aire',
+        'air',
+        'arry',
+        'nic',
+        'lox',
+        'ttle',
+        'ette',
+        'hel',
+        'cus',
+        'ize',
+        'xive',
+        'pow',
+        'tion',
+        'eiji',
+        'ixxi',
+        'pars',
+        '',
+        '',
+        '',
+        '',
+        '',
       ];
 
       
@@ -85,9 +124,10 @@
       
       var wordNum = Math.floor(Math.random() * theWord.length);
       var wordNum2 = Math.floor(Math.random() * middleword.length);
+    var wordNum3 = Math.floor(Math.random() * endword.length);
       
      
-      output.textContent = theWord[wordNum] + middleword[wordNum2];
+      output.textContent = theWord[wordNum] + middleword[wordNum2] + endword[wordNum3];
     }
 </script>
 </body>
