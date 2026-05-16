@@ -1,0 +1,15 @@
+@keyframes rainbow {
+    0% { color: red; }
+    16.67% { color: yellow; }
+    33.33% { color: green; }
+    50% { color: blue; }
+    66.67% { color: green; }
+    83.33% { color: yellow; }
+    100% { color: red; }
+}
+
+.rainbow-text {
+    font-size: 36px;
+    font-weight: bold;
+    animation: rainbow 30s linear infinite;
+}
